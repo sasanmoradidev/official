@@ -1,0 +1,98 @@
+@use './variables' as *;
+
+@mixin flex($alignItem, $justifyContent) {
+    display: flex;
+    align-items: $alignItem;
+    justify-content: $justifyContent;
+}
+
+@mixin flex2{
+    display: flex;
+}
+
+@mixin  absolute (){
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@mixin p30{
+    padding: 0 30px;
+    margin: 0 auto;
+}
+@mixin circle{
+    border-radius: 51%;
+    background-color: #eeeeee;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+@mixin res1600 {
+    @media only screen and (max-width: $res_1600) {
+        @content;
+    }
+}
+
+@mixin res1440 {
+    @media only screen and (max-width: $res_1440) {
+        @content;
+    }
+}
+
+@mixin res1200 {
+    @media only screen and (max-width: $res_1200) {
+        @content;
+    }
+}
+
+@mixin res991 {
+    @media only screen and (max-width: $res_991) {
+        @content;
+    }
+}
+
+@mixin res767 {
+    @media only screen and (max-width: $res_767) {
+        @content;
+    }
+}
+@mixin res600{
+    @media only screen and (max-width: $res_600) {
+        @content;
+    }
+}
+@mixin res500 {
+    @media only screen and (max-width: $res_500) {
+        @content;
+    }
+}
+
+@mixin res400 {
+    @media only screen and (max-width: $res_400) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media only screen and (max-width: $mobile-width) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (max-width: $tablet-width) {
+        @content;
+    }
+}
+
+
+@mixin desktop-width {
+    @media only screen and (max-width: $desktop-width) {
+        @content;
+    }
+}
+

@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import { App, Search } from './App';
 import { Recipe, MyMenu } from './receips';
+import Donate from './Donate';
 
 import Menu from "./components/Menu";
 import data from "./data/recipes.json";
@@ -49,8 +51,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StritMode>
   <>
-  {/* <Menu recipes={data} /> */}
-  <ColorApp />
+    <React.Fragment>
+      <BrowserRouter>
+        <Donate />
+      </BrowserRouter>
+    </React.Fragment>
+    {/* <Menu recipes={data} /> */}
+    {/* <ColorApp /> */}
     {/* <App />
     <Search />
     <MyMenu recipes={newdata} title="receips menu" /> */}

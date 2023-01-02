@@ -1,0 +1,8 @@
+@use './scss' as *;
+
+#root {
+    background-color:$rootback ;
+    max-width: 768px;
+    margin: 0 auto;
+    @include p30;
+}

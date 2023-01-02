@@ -9,6 +9,7 @@ export default function Color({
     onRemove = f => f,
     onRate = f => f
 }) {
+
     return (
         <section>
             <h1>{title}</h1>

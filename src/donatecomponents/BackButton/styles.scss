@@ -1,0 +1,14 @@
+@use '../../scss/' as *;
+
+.circle span {
+    @include circle;
+}
+
+.circle span svg {
+    vertical-align: top;
+    fill: #000;
+}
+
+.backbutton{
+    float: left;
+}
