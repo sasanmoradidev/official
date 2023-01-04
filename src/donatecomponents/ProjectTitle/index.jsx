@@ -1,17 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
-import './styles.scss';
-ProjectTitle.propTypes= {
-    data: PropTypes.object,
-}
+import PropTypes from "prop-types"
+import classes from './styles.module.scss';
 
-function ProjectTitle(props) {
-    const {data} = props;
-    console.log(data);
-    return (
-        <>
-            <span>{data.pagetitle}</span>
-        </>
+ProjectTitle.propTypes = {
+    title: PropTypes.object,
+}
+function ProjectTitle ({datatitle}){
+    const {title} = datatitle[0];
+    return(
+        <h1 className={classes.title}>{title}</h1>
     );
 }
 
